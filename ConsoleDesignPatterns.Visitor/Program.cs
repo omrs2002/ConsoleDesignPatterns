@@ -11,13 +11,13 @@ class Program
        .ConfigureServices(services =>
        {
 
-
+           
 
        })
        .Build();
 
-        //SchoolVisitor();
-        EmployeeVisitor();
+        SchoolVisitor();
+        //EmployeeVisitor();
 
 
     }
@@ -26,6 +26,7 @@ class Program
     {
 
         // Setup employee collection
+        Console.WriteLine("Employees Visitor");
         Employees employee = new Employees();
         employee.Attach(new Clerk());
         employee.Attach(new Director());
@@ -42,6 +43,7 @@ class Program
 
     private static void SchoolVisitor()
     {
+        Console.WriteLine("School Visitor");
         var school = new School();
         var visitor1 = new Doctor("James");
         school.PerformOperation(visitor1);
