@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ConsoleDesignPatterns.Builder
+namespace ConsoleDesignPatterns.Builder.Entities
 {
     public class ProductStockReport
     {
