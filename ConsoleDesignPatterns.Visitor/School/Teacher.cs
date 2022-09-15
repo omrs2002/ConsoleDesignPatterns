@@ -1,10 +1,10 @@
 ﻿namespace ConsoleDesignPatterns.Visitor.School
 {
-    public class Kid : IElement
+    public class Teacher : IElement
     {
         public string Name { get; set; }
 
-        public Kid(string name)
+        public Teacher(string name)
         {
             Name = name;
         }
@@ -14,4 +14,11 @@
             visitor.Visit(this);
         }
     }
+
+
+
+
+
+
+
 }
