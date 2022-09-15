@@ -9,7 +9,8 @@
             {
                 new Kid("Ram"),
                 new Kid("Sara"),
-                new Kid("Pam")
+                new Kid("Pam"),
+                new Teacher("Scince Teacher")
             };
         }
         public void PerformOperation(IVisitor visitor)

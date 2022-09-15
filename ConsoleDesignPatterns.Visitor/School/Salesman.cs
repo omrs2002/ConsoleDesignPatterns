@@ -9,8 +9,20 @@
         }
         public void Visit(IElement element)
         {
-            Kid kid = (Kid)element;
-            Console.WriteLine("Salesman: " + Name + " gave the school bag to the child: " + kid.KidName);
+            if (element.GetType().Name == "Kid")
+            {
+                Kid kid = (Kid)element;
+                Console.WriteLine("Salesman: " + Name + " gave the school bag to the child: " + kid.Name);
+            }
+
+            if (element.GetType().Name == "Teacher")
+            {
+                Teacher teacher = (Teacher)element;
+                Console.WriteLine("Salesman: " + Name + " gave the school bag to the teacher: " + teacher.Name);
+            }
+
+          
+            
         }
     }
 
